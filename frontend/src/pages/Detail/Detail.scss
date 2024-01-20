@@ -1,0 +1,38 @@
+.detailPage{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 35%;
+        
+    }
+
+}
+
+.cardDetails{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:10%;
+    h1{
+        font-family: 'Times New Roman', Times, serif;
+        color: purple;
+    }
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 150%;
+    }
+    button{
+        width: 25%;
+        height: 7vh;
+        border: none;
+        border-radius: 5px;
+        background-color: purple;
+        color: white;
+    }
+}

@@ -1,0 +1,21 @@
+.addForm{
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.formInp{
+    width: 30%;
+    padding-left: 10px;
+}
+.submitBtn{
+    width: 10%;
+    height: 5vh;
+    border: none;
+    background-color: rgb(250, 115, 66);
+    color: white;
+    border-radius: 5px;
+}
