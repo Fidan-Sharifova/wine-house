@@ -4,13 +4,8 @@ import dataContext from "../../context/dataContext";
 import axios from "axios";
 
 const Table = () => {
-  const { data, setData } = useContext(dataContext);
-  const handleDelete=(id)=>{
-    axios.delete(`http://localhost:1000/wines/${id}`).then(res=>{
-      const deleteButton=data.filter((data)=>data._id!==id)
-      setData(deleteButton)
-    })
-  }
+  const { data, handleDelete} = useContext(dataContext);
+
 
   return (
     <div>
@@ -25,7 +20,7 @@ const Table = () => {
         <tbody>
           {data.map((item, index) => (
             <tr key={item._id}>
-              
+
               <td><img style={{"width":"90px"}} src={item.image} alt="" /></td>
               <td>{item.name}</td>
               <td>{item.price}$</td>
@@ -39,3 +34,5 @@ const Table = () => {
 };
 
 export default Table;
+
+

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Products.scss";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Cards from "../Cards/Cards";
+import dataContext from "../../context/dataContext";
 
 const Products = () => {
+  const {handleSearch}=useContext(dataContext)
   return (
     <div className="productSection">
      
@@ -20,6 +22,16 @@ const Products = () => {
           </li>
         </ul>
       </div>
+      <input type="text"onChange={handleSearch} />
+      
+      
+      <select name="" id="">
+        <option value="df">Default</option>
+        <option value="az">A-Z</option>
+        <option value="za">Z-A</option>
+        <option value="09">0-9</option>
+        <option value="90">9-0</option>
+      </select>
       <Cards />
     </div>
   );
